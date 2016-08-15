@@ -13,28 +13,6 @@ var words = [
 ];
 
 
-// function findRotationPoint(words) {
-//     const firstWord = words[0];
-
-//     var floorIndex = 0;
-//     var ceilingIndex = words.length -1;
-
-//     while(floorIndex < ceilingIndex) {
-//         var guessIndex = Math.floor(floorIndex + ((ceilingIndex-floorIndex)/2))
-
-//         if ( firstWord < words[guessIndex] ) {
-//             ceilingIndex = guessIndex
-//         } else {
-//             floorIndex = guessIndex
-//         }
-
-//         if (floorIndex + 1 === ceilingIndex) {
-//             return ceilingIndex;
-//         }
-//     }
-
-// }
-
 var myWords = ['d','e', 'f', 'a', 'b', 'c']
 
 function findRotationPoint(words) {
@@ -71,50 +49,6 @@ function findRotationPoint(words) {
 
 
 console.log(findRotationPoint(myWords))
-
-
-//why in your example of the iterative binary search are you using the whil
-
-
-//rotation point will be first in alphabetical order
-// my attempt that results in a never ending loop
-// function findRotationPoint(arr) {
-//     var floorIndex = -1,
-//         ceilingIndex = arr.length,
-//         workingMiddle;
-
-//     //need at least three for binary search
-//     while (floorIndex + 1 < ceilingIndex) {
-
-//         workingMiddle = floorIndex + Math.floor(ceilingIndex/2);
-
-//         //all lessThan values are to the left
-//         if ( arr[0] < arr[workingMiddle]) {
-//             //cut problem in half to the left
-//             ceilingIndex = workingMiddle;
-//         } else {
-//             floorIndex = workingMiddle;
-
-//         }
-
-//     }
-
-//     //you only have two left now choose the least
-//     // var rotationPoint = floorIndex < ceilingIndex ? floorIndex : ceilingIndex;
-//     // return arr[rotationPoint];
-
-//     return [floorIndex, ceilingIndex];
-
-// }
-
-
-// console.log(findRotationPoint(words));
-
-
-//'ptolemaic', 'asymptote'
-
-
-
 
 
 
